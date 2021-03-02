@@ -1,0 +1,75 @@
+body {
+  background-color: #586F7C;
+}
+article {
+    padding: 0.5in 0;
+    display: grid;
+    grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+    background: #586F7C;
+}
+article * { grid-column: start/end; }
+
+.topnav {
+  overflow: hidden;
+  background-color: #2F4550;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #111;
+}
+
+.topnav a.active {
+  background-color: #666;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+
+#scrollbox{
+  position:relative;
+  width: 50%;
+  height: 25%;
+  overflow: auto;
+  border: solid black 2px;
+}
+
+#formbox{
+  border: solid black 2px;
+  background-color: rgb(164, 186, 194);
+}
+
